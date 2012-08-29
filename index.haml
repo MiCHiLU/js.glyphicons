@@ -1,0 +1,144 @@
+!!! 5
+%html{:lang => "en"}
+%meta{:charset => "utf-8"}
+%title All GLYPHICONS as CSS sprite for Twitter Bootstrap
+%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+
+%link{:href => "assets/glyphicons.css", :rel => "stylesheet"}
+%link{:href => "http://twitter.github.com/bootstrap/assets/css/bootstrap.css", :rel => "stylesheet"}
+%link{:href => "http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+%link{:href => "http://twitter.github.com/bootstrap/assets/css/docs.css", :rel => "stylesheet"}
+%link{:href => "http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css", :rel => "stylesheet"}
+
+%link{:rel => "shortcut icon", :href => "http://twitter.github.com/bootstrap/assets/ico/favicon.ico"}
+%link{:rel => "apple-touch-icon-precomposed", :sizes => "144x144", :href => "http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png"}
+%link{:rel => "apple-touch-icon-precomposed", :sizes => "114x114", :href => "http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png"}
+%link{:rel => "apple-touch-icon-precomposed", :sizes => "72x72",   :href => "http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png"}
+%link{:rel => "apple-touch-icon-precomposed", :href => "http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png"}
+
+%body{:"data-spy" => "scroll", :"data-target" => ".bs-docs-sidebar"}/
+
+.navbar.navbar-inverse.navbar-fixed-top
+ .navbar-inner
+  .container
+   .nav-collapse.collapse
+    .nav
+     %li
+      %a{:href => "./index.html"} Home
+
+.jumbotron.masthead
+ .container
+  %h1 GLYPHICONS
+  %p
+   %strong 400 icons
+   as CSS sprite for Twitter Bootstrap.
+   %br
+   Available in dark gray and white, provided by
+   %a{:href => "http://glyphicons.com/", :target => "_blank"} Glyphicons
+   \.
+  %p
+   %a.btn.btn-primary.btn-large{:href => "https://github.com/MiCHiLU/js.glyphicons/zipball/master"} Download GLYPHICONS
+  %ul.masthead-links
+   %li
+    %a{:href => "http://github.com/MiCHiLU/js.glyphicons"} GitHub project
+   %li Version 1.7
+
+.bs-docs-social
+ .container
+  %ul.bs-docs-social-buttons
+   %li
+    %iframe.github-btn{:src => "http://ghbtns.com/github-btn.html?user=MiCHiLU&repo=js.glyphicons&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "100px", :height => "20px"}
+   %li
+    %iframe.github-btn{:src => "http://ghbtns.com/github-btn.html?user=MiCHiLU&repo=js.glyphicons&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "98px", :height => "20px"}
+   %li.follow-btn
+    %a.twitter-follow-button{:href => "https://twitter.com/glyphicons", :"data-link-color" => "#0069D6", :"data-show-count" => "true"} Follow @glyphicons
+   %li.tweet-btn
+    %a.twitter-share-button{:href => "https://twitter.com/share", :"data-url" => "http://michilu.github.com/js.glyphicons/", :"data-count" => "horizontal", :"data-via" => "gomasamin", :"data-related" => "gomasamin:Generator of GLYPHICONS CSS sprite"} Tweet
+
+.container
+ %section#icons
+  .page-header
+   %h1
+    Icons
+    %small
+     by
+     %a{:href => "http://glyphicons.com/", :target => "_blank"} Glyphicons
+
+  %h2 Icon glyphs
+
+  %ul.the-icons.clearfix
+   - (["gicon-glass","gicon-leaf","gicon-dog","gicon-user","gicon-girl","gicon-car","gicon-user_add","gicon-user_remove","gicon-film","gicon-magic","gicon-envelope","gicon-camera","gicon-heart","gicon-beach_umbrella","gicon-train","gicon-print","gicon-bin","gicon-music","gicon-note","gicon-cogwheel","gicon-home","gicon-snowflake","gicon-fire","gicon-cogwheels","gicon-parents","gicon-binoculars","gicon-road","gicon-search","gicon-cars","gicon-notes_2","gicon-pencil","gicon-bus","gicon-wifi_alt","gicon-luggage","gicon-old_man","gicon-woman","gicon-file","gicon-credit","gicon-airplane","gicon-notes","gicon-stats","gicon-charts","gicon-pie_chart","gicon-group","gicon-keys","gicon-calendar","gicon-router","gicon-camera_small","gicon-dislikes","gicon-star","gicon-link","gicon-eye_open","gicon-eye_close","gicon-alarm","gicon-clock","gicon-stopwatch","gicon-projector","gicon-history","gicon-truck","gicon-cargo","gicon-compass","gicon-keynote","gicon-attach","gicon-power","gicon-lightbulb","gicon-tag","gicon-tags","gicon-cleaning","gicon-ruller","gicon-gift","gicon-umbrella","gicon-book","gicon-bookmark","gicon-signal","gicon-cup","gicon-stroller","gicon-headphones","gicon-headset","gicon-warning_sign","gicon-signal","gicon-retweet","gicon-refresh","gicon-roundabout","gicon-random","gicon-heat","gicon-repeat","gicon-display","gicon-log_book","gicon-adress_book","gicon-magnet","gicon-table","gicon-adjust","gicon-tint","gicon-crop","gicon-vector_path_square","gicon-vector_path_circle","gicon-vector_path_polygon","gicon-vector_path_line","gicon-vector_path_curve","gicon-vector_path_all","gicon-font","gicon-italic","gicon-bold","gicon-text_underline","gicon-text_strike","gicon-text_height","gicon-text_width","gicon-text_resize","gicon-left_indent","gicon-right_indent","gicon-align_left","gicon-align_center","gicon-align_right","gicon-justify","gicon-list","gicon-text_smaller","gicon-text_bigger","gicon-embed","gicon-embed_close","gicon-adjust","gicon-message_full","gicon-message_empty","gicon-message_in","gicon-message_out","gicon-message_plus","gicon-message_minus","gicon-message_ban","gicon-message_flag","gicon-message_lock","gicon-message_new","gicon-inbox","gicon-inbox_plus","gicon-inbox_minus","gicon-inbox_lock","gicon-inbox_in","gicon-inbox_out","gicon-computer_locked","gicon-computer_service","gicon-computer_proces","gicon-phone","gicon-database_lock","gicon-database_plus","gicon-database_minus","gicon-database_ban","gicon-folder_open","gicon-folder_plus","gicon-folder_minus","gicon-folder_lock","gicon-folder_flag","gicon-folder_new","gicon-check","gicon-edit","gicon-new_window","gicon-more_windows","gicon-show_big_thumbnails","gicon-show_thumbnails","gicon-show_thumbnails_with_lines","gicon-show_lines","gicon-playlist","gicon-picture","gicon-imac","gicon-macbook","gicon-ipad","gicon-iphone","gicon-iphone_transfer","gicon-iphone_exchange","gicon-ipod","gicon-ipod_shuffle","gicon-ear_plugs","gicon-albums","gicon-step_backward","gicon-fast_backward","gicon-rewind","gicon-play","gicon-pause","gicon-stop","gicon-forward","gicon-fast_forward","gicon-step_forward","gicon-eject","gicon-facetime_video","gicon-download_alt","gicon-mute","gicon-volume_down","gicon-volume_up","gicon-screenshot","gicon-move","gicon-more","gicon-brightness_reduce","gicon-brightness_increase","gicon-circle_plus","gicon-circle_minus","gicon-circle_remove","gicon-circle_ok","gicon-circle_question_mark","gicon-circle_info","gicon-circle_exclamation_mark","gicon-remove","gicon-ok","gicon-ban","gicon-download","gicon-upload","gicon-shopping_cart","gicon-lock","gicon-unlock","gicon-electricity","gicon-ok_2","gicon-remove_2","gicon-cart_out","gicon-cart_in","gicon-left_arrow","gicon-right_arrow","gicon-down_arrow","gicon-up_arrow","gicon-resize_small","gicon-resize_full","gicon-circle_arrow_left","gicon-circle_arrow_right","gicon-circle_arrow_top","gicon-circle_arrow_down","gicon-play_button","gicon-unshare","gicon-share","gicon-thin_right_arrow","gicon-thin_arrow_left","gicon-bluetooth","gicon-euro","gicon-usd","gicon-bp","gicon-retweet_2","gicon-moon","gicon-sun","gicon-cloud","gicon-direction","gicon-brush","gicon-pen","gicon-zoom_in","gicon-zoom_out","gicon-pin","gicon-riflescope","gicon-rotation_lock","gicon-flash","gicon-google_maps","gicon-anchor","gicon-conversation","gicon-chat","gicon-male","gicon-female","gicon-asterisk","gicon-divide","gicon-snorkel_diving","gicon-scuba_diving","gicon-oxygen_bottle","gicon-fins","gicon-fishes","gicon-boat","gicon-delete_point","gicon-sheriffs_-star","gicon-qrcode","gicon-barcode","gicon-pool","gicon-buoy","gicon-spade","gicon-bank","gicon-vcard","gicon-electrical_plug","gicon-flag","gicon-credit_card","gicon-keyboard_wireless","gicon-keyboard_wired","gicon-shield","gicon-ring","gicon-cake","gicon-drink","gicon-beer","gicon-fast_food","gicon-cutlery","gicon-pizza","gicon-birthday_cake","gicon-tablet","gicon-settings","gicon-bullets","gicon-cardio","gicon-t-shirt","gicon-pants","gicon-sweater","gicon-fabric","gicon-leather","gicon-scissors","gicon-podium","gicon-skull","gicon-celebration","gicon-tea_kettle","gicon-french_press","gicon-coffe_cup","gicon-pot","gicon-grater","gicon-kettle","gicon-hospital","gicon-hospital_h","gicon-microphone","gicon-webcam","gicon-temple_christianity_church","gicon-temple_islam","gicon-temple_hindu","gicon-temple_buddhist","gicon-electrical_socket_eu","gicon-electrical_socket_us","gicon-bomb","gicon-comments","gicon-flower","gicon-baseball","gicon-rugby","gicon-ax","gicon-table_tennis","gicon-bowling","gicon-tree_conifer","gicon-tree_deciduous","gicon-more-items","gicon-sort","gicon-filter","gicon-gamepad","gicon-playing_dices","gicon-calculator","gicon-tie","gicon-wallet","gicon-share","gicon-sampler","gicon-piano","gicon-web_browser","gicon-blog","gicon-dashboard","gicon-certificate","gicon-bell","gicon-candle","gicon-pin_classic","gicon-iphone_shake","gicon-pin_flag","gicon-turtle","gicon-rabbit","gicon-globe","gicon-briefcase","gicon-hdd","gicon-thumbs_up","gicon-thumbs_down","gicon-hand_right","gicon-hand_left","gicon-hand_up","gicon-hand_down","gicon-fullscreen","gicon-shopping_bag","gicon-book_open","gicon-nameplate","gicon-nameplate_alt","gicon-vases","gicon-announcement","gicon-dumbbell","gicon-suitcase","gicon-file_import","gicon-file_export","gicon-pinterest","gicon-dropbox","gicon-google_alt","gicon-jolicloud","gicon-yahoo","gicon-blogger","gicon-picasa","gicon-amazon","gicon-tumblr","gicon-wordpress","gicon-instapaper","gicon-evernote","gicon-xing","gicon-zootool","gicon-dribbble","gicon-deviantart","gicon-read_it_later","gicon-linked_in","gicon-forrst","gicon-pinboard","gicon-behance","gicon-github","gicon-youtube","gicon-skitch","gicon-4square","gicon-quora","gicon-google_plus","gicon-spootify","gicon-stumbleupon","gicon-readability","gicon-facebook","gicon-twitter_t","gicon-twitter","gicon-buzz","gicon-vimeo","gicon-flickr","gicon-last_fm","gicon-rss","gicon-skype","gicon-e-mail"]).each do |i|
+    %li
+     %i{:class => "#{i}"}
+     = i
+
+  %h3 Glyphicons attribution
+  %p
+   %a{:href => "http://glyphicons.com/"} GLYPHICONS FREE
+   are released under the
+   %a{:href => "http://creativecommons.org/licenses/by/3.0/deed.en", :target => "_blank"} Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+   \. The Glyphicons FREE can be used both commercially and for personal use, but you must always add a link to
+   %a{:href => "http://glyphicons.com/"} glyphicons.com
+   in a prominent place (e.g. the footer of a website), include the CC-BY license and the reference to
+   %a{:href => "http://glyphicons.com/"} glyphicons.com
+   on every page using Glyphicons.
+
+  %hr.bs-docs-separator
+
+  %h2 How to use
+  %p
+   All icons require an
+   %code &lt;i&gt;
+   tag with a unique class, prefixed with
+   %code gicon-
+   \. To use, place the following code just about anywhere:
+
+  %pre.prettyprint.linenums
+   &lt;i class="gicon-search"&gt;&lt;/i&gt;
+
+  %p There are also styles available for inverted (white) icons, made ready with one extra class. We will specifically enforce this class on hover and active states for nav and dropdown links.
+
+  %pre.prettyprint.linenums
+   &lt;i class="gicon-search icon-white"&gt;&lt;/i&gt;
+
+  %p
+   %span.label.label-info Heads up!
+   When using beside strings of text, as in buttons or nav links, be sure to leave a space after the
+   %code &lt;i&gt;
+   tag for proper spacing.
+
+%footer.footer
+ .container
+  %p.pull-right
+   %a{:href => "http://twitter.github.com/bootstrap/base-css.html#icons"} Back to Twitter Bootstrap
+  %p
+   Generated by
+   %a{:href => "http://twitter.com/MiCHiLU", :target => "_blank"} @MiCHiLU
+   \.
+  %p
+   Designed and built with all the love in the world
+   %a{:href => "http://twitter.com/twitter", :target => "_blank"} @twitter
+   by
+   %a{:href => "http://twitter.com/mdo", :target => "_blank"} @mdo
+   and
+   %a{:href => "http://twitter.com/fat", :target => "_blank"} @fat
+   \.
+  %p
+   Code licensed under the
+   %a{:href => "http://www.apache.org/licenses/LICENSE-2.0", :target => "_blank"} Apache License v2.0
+   \. Documentation licensed under
+   %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
+   \.
+  %p
+   Icons from
+   %a{:href => "http://glyphicons.com"} Glyphicons Free
+   , licensed under
+   %a{:href => "http://creativecommons.org/licenses/by/3.0/"} CC BY 3.0
+   \.
+  %ul.footer-links
+   %li
+    %a{:href => "https://github.com/MiCHiLU/js.glyphicons/issues?state=open"} Submit issues
+
+%script{:type => "text/javascript", :src => "http://platform.twitter.com/widgets.js"}
+%script{:src  => "http://twitter.github.com/bootstrap/assets/js/jquery.js"}
+%script{:src  => "http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"}
